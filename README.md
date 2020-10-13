@@ -23,7 +23,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add FIREBASE_API_KEY env variable in your bash profile
+
+ Sign Up:
+  Firebase.sign_up(email, password)
+  
+ Sign In:
+  Firebase.sign_in(email, password)
 
 ## Development
 
