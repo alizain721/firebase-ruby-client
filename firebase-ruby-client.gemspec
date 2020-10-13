@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ali.zain@zweidevs.com"]
 
   spec.summary       = %q{}
-  spec.description   = %q{}
+  spec.description   =  "it is simple ruby client to perfom sign up and sign in with firebase, It will have more features comming soon"
   spec.homepage      = ""
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
