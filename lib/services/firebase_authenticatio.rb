@@ -8,7 +8,7 @@ class FirebaseApi
   end
 
   def self.sign_in(email, password)
-    responce = HTTParty.post("#{BASE_URL}:signInWithPassword?key=#{ENV['FIREBASE_API_KEY']}", body: { email: email, password: password})
+    responce = HTTParty.post("#{BASE_URL}:signInWithPassword?key=#{ENV['FIREBASE_API_KEY']}", body: { email: email, password: password, returnSecureToken: true})
   end
 
 end
