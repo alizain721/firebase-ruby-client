@@ -12,7 +12,11 @@ class FirebaseDatabaseApi
   end
 
   def self.delete(collection_name, access_token, objectId)
-    responce = HTTParty.delete("#{BASE_URL}/#{collection_name}.json?auth=#{access_token}")
+    responce = HTTParty.delete("#{BASE_URL}/#{collection_name}/#{objectId}.json?auth=#{access_token}")
+  end
+
+  def self.update(collection_name, access_token, objectId, body)
+    responce = HTTParty.patch("#{BASE_URL}/#{collection_name}/#{objectId}.json?auth=#{access_token}", body: body)
   end
 
 end
