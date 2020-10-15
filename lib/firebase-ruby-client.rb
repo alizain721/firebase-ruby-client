@@ -22,4 +22,7 @@ class Firebase
     FirebaseDatabaseApi.post(collection_name, access_token, body)
   end
 
+  def self.patch(collection_name, access_token, objectId, body)
+    FirebaseDatabaseApi.update(collection_name, access_token, objectId, body)
+  end
 end
