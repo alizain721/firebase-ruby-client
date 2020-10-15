@@ -44,7 +44,7 @@ Add FIREBASE_PROJECT_ID env variable in your bash profile
    -body = {name: "user", email:"test@firebase,com"} In body we should have a payload in the previous format for the attrbutes of node for which we are inserting
    record
  
-  ## Delete Record
+  ## Update Record
   Firebase.delete(collection_name, access_token, objec_id, body)
    - id_token = When you sign in a user, you will get it in responce objtec
    - collection_name = Name of firebase node, whose recors you want to fetch
