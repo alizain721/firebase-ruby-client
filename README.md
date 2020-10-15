@@ -24,12 +24,32 @@ Or install it yourself as:
 ## Usage
 
 Add FIREBASE_API_KEY env variable in your bash profile
+Add FIREBASE_PROJECT_ID env variable in your bash profile
 
  Sign Up:
   Firebase.sign_up(email, password)
   
  Sign In:
   Firebase.sign_in(email, password)
+ 
+ Fetch Records
+  Firebase.get(collection_name, id_token)
+  - id_token = When you sign in a user, you will get it in responce objtec
+  - collection_name = Name of firebase node, whose recors you want to fetch
+  
+ Create Record
+  Firebase.post(collection_name, access_token, body)
+   - id_token = When you sign in a user, you will get it in responce objtec
+   - collection_name = Name of firebase node, whose recors you want to fetch
+   -body = {name: "user", email:"test@firebase,com"} In body we should have a payload in the previous format for the attrbutes of node for which we are inserting
+   record
+ 
+ Delete Record
+  Firebase.delete(collection_name, access_token, objec_id)
+   - id_token = When you sign in a user, you will get it in responce objtec
+   - collection_name = Name of firebase node, whose recors you want to fetch
+   - object_id = This is the id of firebase node that you are going to delete
+  
 
 ## Development
 
